@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Call_Flag</title>
+</head>
+<body>
+    <h2>Predict Call_Flag</h2>
+    
+    {% if pred %}
+    <p>This customer match class {{ pred-1 }}</p>
+    {% endif %}
+
+    <form method="POST" action="/">
+        DATE_FOR:<br>
+        <input type="text" name="DATE_FOR" value='5/19/2014'>
+        <br><br>
+        RTD_ST_CD:<br>
+        <input type="text" name="RTD_ST_CD" value='ST_S0'>
+        <br><br>
+        CustomerSegment:<br>
+        <input type="text" name="CustomerSegment" value='1'>
+        <br><br>
+        Tenure:<br>
+        <input type="number" name="Tenure" value=1.0>
+        <br><br>
+        Age:<br>
+        <input type="number" name="Age" value=50>
+        <br><br>
+        MART_STATUS:<br>
+        <input type="text" name="MART_STATUS" value='MS_S0'>
+        <br><br>
+        GENDER:<br>
+        <input type="text" name="GENDER" value='F'>
+        <br><br>
+        CHANNEL1_6M:<br>
+        <input type="number" name="CHANNEL1_6M" value=1>
+        <br><br>
+        CHANNEL2_6M:<br>
+        <input type="number" name="CHANNEL2_6M" value=1>
+        <br><br>
+        CHANNEL3_6M:<br>
+        <input type="number" name="CHANNEL3_6M" value=1>
+        <br><br>
+        CHANNEL4_6M:<br>
+        <input type="number" name="CHANNEL4_6M" value=1>
+        <br><br>
+        CHANNEL5_6M:<br>
+        <input type="number" name="CHANNEL5_6M" value=1>
+        <br><br>
+        METHOD1_6M:<br>
+        <input type="number" name="METHOD1_6M" value=1>
+        <br><br>
+        RECENT_PAYMENT:<br>
+        <input type="number" name="RECENT_PAYMENT" value=1>
+        <br><br>
+        PAYMENTS_6M:<br>
+        <input type="number" name="PAYMENTS_6M" value=1>
+        <br><br>
+        CHANNEL1_3M:<br>
+        <input type="number" name="CHANNEL1_3M" value=1>
+        <br><br>
+        CHANNEL2_3M:<br>
+        <input type="number" name="CHANNEL2_3M" value=1>
+        <br><br>
+        CHANNEL3_3M:<br>
+        <input type="number" name="CHANNEL3_3M" value=1>
+        <br><br>
+        CHANNEL4_3M:<br>
+        <input type="number" name="CHANNEL4_3M" value=1>
+        <br><br>
+        CHANNEL5_3M:<br>
+        <input type="number" name="CHANNEL5_3M" value=1>
+        <br><br>
+        METHOD1_3M:<br>
+        <input type="number" name="METHOD1_3M" value=1>
+        <br><br>
+        PAYMENTS_3M:<br>
+        <input type="number" name="PAYMENTS_3M" value=1>
+        <br><br>
+        NOT_DI_3M:<br>
+        <input type="number" name="NOT_DI_3M" value=1>
+        <br><br>
+        NOT_DI_6M:<br>
+        <input type="number" name="NOT_DI_6M" value=1>
+        <br><br>
+        EVENT1_30_FLAG:<br>
+        <input type="number" name="EVENT1_30_FLAG" value=1>
+        <br><br>
+        EVENT2_90_SUM:<br>
+        <input type="number" name="EVENT2_90_SUM" value=1>
+        <br><br>
+        LOGINS:<br>
+        <input type="number" name="LOGINS" value=1>
+        <br><br>
+        POLICYPURCHASECHANNEL:<br>
+        <input type="number" name="POLICYPURCHASECHANNEL" value=1>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
